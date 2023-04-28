@@ -1,14 +1,4 @@
 const { gql } = require("apollo-server-express");
-const express = require("express");
-const { ApolloServer, gql } = require("apollo-server-express");
-const {
-  GraphQLUpload,
-  graphqlUploadExpress, // A Koa implementation is also exported.
-} = require("graphql-upload");
-const { finished } = require("stream/promises");
-const {
-  ApolloServerPluginLandingPageLocalDefault,
-} = require("apollo-server-core");
 
 const typeDefs = gql`
   type User {
@@ -63,7 +53,6 @@ const typeDefs = gql`
     removePost(postId: ID!): Post
     removeComment(postId: ID!, commentId: ID!): Post
     updatePost(postId: ID!, postText: String!): Post
-    uploadFile(file: Upload!): File
   }
 `;
 

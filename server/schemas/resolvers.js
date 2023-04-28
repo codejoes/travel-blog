@@ -1,38 +1,8 @@
 const { AuthenticationError } = require("apollo-server-express");
 const { User, Post } = require("../models");
 const { signToken } = require("../utils/auth");
-const express = require("express");
-const { ApolloServer, gql } = require("apollo-server-express");
-const {
-  GraphQLUpload,
-  graphqlUploadExpress, // A Koa implementation is also exported.
-} = require("graphql-upload");
-const { finished } = require("stream/promises");
-const {
-  ApolloServerPluginLandingPageLocalDefault,
-} = require("apollo-server-core");
-
-// const storeUpload = async ({ stream, filename }) => {
-//   const uploadDir = "./uploads";
-//   const path = join(uploadDir, filename);
-//   return new Promise((resolve, reject) =>
-//     stream
-//       .pipe(createWriteStream(path))
-//       .on("finish", () => resolve({ path }))
-//       .on("error", reject)
-//   );
-// };
-
-// const processUpload = async (upload) => {
-//   const { createReadStream, filename, mimetype } = await upload;
-//   const stream = createReadStream();
-//   const { path } = await storeUpload({ stream, filename });
-//   return { filename, mimetype, path };
-// };
 
 const resolvers = {
-  Upload: GraphQLUpload,
-
   Query: {
     users: async () => {
       return User.find().populate("posts");
@@ -48,6 +18,7 @@ const resolvers = {
       return Post.findOne({ _id: postId });
     },
   },
+
   Mutation: {
     addUser: async (parent, { username, email, password }) => {
       const user = await User.create({ username, email, password });
@@ -115,18 +86,6 @@ const resolvers = {
           runValidators: true,
         }
       );
-    },
-    uploadFile: async (parent, { file }) => {
-      const { createReadStream, filename, mimetype, encoding } = await file;
-      const stream = createReadStream();
-      const out = require("fs").createWriteStream("./uploads");
-      stream.pipe(out);
-      await finished(out);
-
-      // const result = await processUpload(file);
-      // const newFile = await File.create(result);
-      // return newFile;
-      return { filename, mimetype, encoding };
     },
   },
 };
