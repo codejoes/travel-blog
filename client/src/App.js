@@ -14,6 +14,7 @@ import Login from "./pages/Login";
 import SinglePost from "./pages/SinglePost";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Update from "./pages/Update";
 
 import "./fonts/MetalsmithRegular-x3yMq.ttf";
 
@@ -53,6 +54,7 @@ function App() {
               <Route path="/login" element={<Login />} />
               <Route path="/signup" element={<Signup />} />
               <Route path="/posts/:postId" element={<SinglePost />} />
+              <Route path="/posts/:postId/edit" element={<Update />} />
             </Routes>
           </div>
           <Footer />

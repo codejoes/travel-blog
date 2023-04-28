@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useMutation } from "@apollo/client";
 import { REMOVE_POST } from "../../utils/mutations";
 import Auth from "../../utils/auth";
@@ -14,6 +14,8 @@ const DeletePost = ({ postId }) => {
     ],
   });
 
+  let navigate = useNavigate();
+
   const handleDelete = async (event) => {
     event.preventDefault();
 
@@ -24,6 +26,8 @@ const DeletePost = ({ postId }) => {
         },
       });
       console.log("post deleted!");
+
+      navigate("/");
     } catch (err) {
       console.error(err);
     }

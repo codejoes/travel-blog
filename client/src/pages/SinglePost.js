@@ -1,12 +1,13 @@
 import React from "react";
 
 // Import the `useParams()` hook
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import { useQuery } from "@apollo/client";
 
 import CommentList from "../components/CommentList";
 import CommentForm from "../components/CommentForm";
 import DeletePost from "../components/DeletePost";
+//import UpdatePostForm from "../components/UpdatePostForm";
 
 import { QUERY_SINGLE_POST } from "../utils/queries";
 
@@ -45,6 +46,9 @@ const SinglePost = () => {
         >
           {post.postText}
           <DeletePost postId={post._id} />
+          <Link className="btn btn-sm btn-info" to={`/posts/${post._id}/edit`}>
+            📝
+          </Link>
         </blockquote>
       </div>
 
