@@ -18,5 +18,8 @@
   },
   "dependencies": {
     "graphql-upload": "^16.0.2"
+  },
+  "engines": {
+      "node": "18.2.1"
   }
 }
