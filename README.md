@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# Travel-Blog
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A travel blog made with React components!
 
-## Available Scripts
+## Description
 
-In the project directory, you can run:
+Travel-Blog is exactly how it sounds, a blog made to document my travels in China!
 
-### `npm start`
+## Technologies
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The technologies used are Express.js, NodeJS, React, Apollo, GraphQL, MongoDB, Mongoose, among others.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Table of Contents
 
-### `npm test`
+1. [Installation](#installation)
+2. [Usage](#usage)
+3. [License](#license)
+4. [Contributions](#contributions)
+5. [Tests](#tests)
+6. [Questions](#questions)
+7. [App](#app)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
 
-### `npm run build`
+Simply visit the deployed [Heroku link](https://travel-blog-codejoes.herokuapp.com/) to view my posts and follow along! To install for your own use make sure to fork & clone the repository onto your own desktop. Run `npm i` to install dependencies and then run `npm run develop` to make use of concurrently so you can make changes to the website on the fly. When deploying your own website make sure that you change your environment variables to match your own MongoDB setup.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Usage
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Follow the installation steps above and refactor for your own use!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## License
 
-### `npm run eject`
+None
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Contributions
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+To contribute to this project please contact me on my GitHub profile or via email or simply create a pull request for me to review.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Tests
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+N/A
 
-## Learn More
+## Questions
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+[MyGitHub](https://github.com/codejoes)
+You may send any additional questions [here](josephscodes@gmail.com)!
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## App
 
-### Code Splitting
+[GitHub Repo](https://github.com/codejoes/travel-blog)
+[Heroku Link](https://travel-blog-codejoes.herokuapp.com/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![Screenshot of Website](./public/images/Screenshot%202023-05-01%20110457.png)
