@@ -1007,6 +1007,10 @@ header .overlay{
   border-radius: 5%;
 }
 
+img[src=""] {
+  display: none;
+}
+
 .blogPhoto {
   border-radius: 2%;
   border: solid 3px #26232B;
