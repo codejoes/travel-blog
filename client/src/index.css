@@ -11,6 +11,12 @@
   margin: 20px 0px;
 }
 
+.uploadPhoto {
+  width: 50vw;
+  height: max-content;
+  margin: 20px 0px;
+}
+
 
 .overflow-wrap {
   overflow-wrap: break-word;

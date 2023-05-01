@@ -115,7 +115,7 @@ const PostForm = () => {
               </label>
 
               <Image
-                className="blogPhoto"
+                className="uploadPhoto"
                 cloudName="dk4nuqa71"
                 publicId={postUrl}
               />
