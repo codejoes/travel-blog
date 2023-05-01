@@ -50,4 +50,4 @@ You may send any additional questions [here](josephscodes@gmail.com)!
 [GitHub Repo](https://github.com/codejoes/travel-blog)
 [Heroku Link](https://travel-blog-codejoes.herokuapp.com/)
 
-![Screenshot of Website](./public/images/Screenshot%202023-05-01%20110457.png)
+![Screenshot of Website](./client/public/images/Screenshot%202023-05-01%20110457.png)
