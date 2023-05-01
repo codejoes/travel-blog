@@ -114,7 +114,11 @@ const PostForm = () => {
                 />
               </label>
 
-              <Image cloudName="dk4nuqa71" publicId={postUrl} />
+              <Image
+                className="blogPhoto"
+                cloudName="dk4nuqa71"
+                publicId={postUrl}
+              />
             </div>
             <div className="col-12 col-lg-9">
               <textarea
