@@ -20,7 +20,7 @@ const PostList = ({ posts, title }) => {
             </h4>
             <div className="card-body bg-custom-lion p-2">
               <div className="display-flex justify-center">
-                <img className="homeImage" src={post.postImage} />
+                <img className="homeImage" src={post.postImage} alt="" />
               </div>
               <div className="post-text-padding">
                 <p className="overflow-wrap">{post.postText}</p>
