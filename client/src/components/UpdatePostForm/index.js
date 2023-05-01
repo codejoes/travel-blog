@@ -142,7 +142,7 @@ const UpdatePostForm = ({ postId }) => {
   const handleChange = (event) => {
     const { name, value } = event.target;
 
-    if (name === "postText" && value.length <= 280) {
+    if (name === "postText" && value.length <= 560) {
       setPostText(value);
       setCharacterCount(value.length);
     }
@@ -156,10 +156,10 @@ const UpdatePostForm = ({ postId }) => {
         <>
           <p
             className={`m-0 ${
-              characterCount === 280 || error ? "text-danger" : ""
+              characterCount === 560 || error ? "text-danger" : ""
             }`}
           >
-            Character Count: {characterCount}/280
+            Character Count: {characterCount}/560
           </p>
           <form
             className="flex-row justify-center justify-space-between-md align-center"

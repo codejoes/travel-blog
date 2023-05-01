@@ -12,14 +12,19 @@ const PostList = ({ posts, title }) => {
       {posts &&
         posts.map((post) => (
           <div key={post._id} className="card mb-3">
-            <h4 className="card-header bg-primary text-light p-2 m-0">
+            <h4 className="card-header bg-custom-raisin text-custom-pink p-2 m-0">
               {post.postAuthor} <br />
               <span style={{ fontSize: "1rem" }}>
                 created this post on {post.createdAt}
               </span>
             </h4>
-            <div className="card-body bg-light p-2">
-              <p className="overflow-wrap">{post.postText}</p>
+            <div className="card-body bg-custom-lion p-2">
+              <div className="display-flex justify-center">
+                <img className="homeImage" src={post.postImage} />
+              </div>
+              <div className="post-text-padding">
+                <p className="overflow-wrap">{post.postText}</p>
+              </div>
             </div>
             <Link
               className="btn btn-primary btn-block btn-squared"

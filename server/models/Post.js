@@ -6,8 +6,12 @@ const postSchema = new Schema({
     type: String,
     required: "Your post needs to have text!",
     minlength: 1,
-    maxlength: 280,
+    maxlength: 560,
     trim: true,
+  },
+  postImage: {
+    type: String,
+    required: false,
   },
   postAuthor: {
     type: String,

@@ -27,13 +27,17 @@ const SinglePost = () => {
   }
   return (
     <div className="my-3">
-      <h3 className="card-header bg-dark text-light p-2 m-0">
+      <h3 className="card-header bg-custom-raisin text-custom-pink p-2 m-0">
         {post.postAuthor} <br />
         <span style={{ fontSize: "1rem" }}>
           created this post on {post.createdAt}
         </span>
       </h3>
-      <div className="bg-light py-4">
+      <div className="bg-custom-lion py-4">
+        <div className="display-flex justify-center">
+          <img className="blogPhoto" src={post.postImage} />
+        </div>
+
         <blockquote
           className="p-4"
           style={{
@@ -45,11 +49,14 @@ const SinglePost = () => {
           }}
         >
           {post.postText}
+        </blockquote>
+        <div className="display-flex justify-space-around no-dec">
           <DeletePost postId={post._id} />
-          <Link className="btn btn-sm btn-info" to={`/posts/${post._id}/edit`}>
+          <Link className="btn btn-lg btn-info " to={`/posts/${post._id}/edit`}>
+            {" "}
             📝
           </Link>
-        </blockquote>
+        </div>
       </div>
 
       <div className="my-5">

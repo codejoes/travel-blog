@@ -4,6 +4,14 @@
   url("./fonts/MetalsmithRegular-x3yMq.ttf") format("truetype");
 }
 
+/* Custom CSS */
+.blogPhoto {
+  width: 50vw;
+  height: max-content;
+  margin: 20px 0px;
+}
+
+
 .overflow-wrap {
   overflow-wrap: break-word;
 }
@@ -960,6 +968,61 @@ a:hover {
   background-color: #1b89bc !important;
 }
 
+
+
+/* CUSTOM HEADER */
+
+header {
+	background-image: url("./assets/1682844857278\ \(3\).jpg");
+  text-align: center;
+	width: 100%;
+	height: auto;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+	overflow: hidden;
+	border-radius: 0 0 85% 85% / 30%;
+}
+header .overlay{
+	width: 100%;
+	height: 100%;
+	padding: 50px;
+	text-shadow: 1px 1px 1px #616161;
+}
+
+/* CUSTOM HOME PAGE */
+.rounded {
+  border-radius: 3%;
+}
+
+.homeImage {
+  height: 25vw;
+  width: auto;
+  border-radius: 5%;
+}
+
+.blogPhoto {
+  border-radius: 2%;
+  border: solid 3px #26232B;
+}
+
+.post-text-padding {
+  padding: 10px 10px;
+}
+
+/* CUSTOM SINGLE POST VIEW */
+.no-dec {
+  text-decoration: none;
+}
+
+.no-dec :hover {
+  text-decoration: none;
+}
+
+.btn-pad {
+  padding: 0px 5px;
+}
+
 /* DISPLAY */
 .display-none {
   display: none !important;
@@ -1021,12 +1084,12 @@ a:hover {
 }
 
 .btn.btn-primary {
-  background-color: #2d3e50;
-  color: #d9e9e8;
+  background-color: #26232B;
+  color: #F9B6C8;
 }
 
 .btn.btn-primary:hover {
-  background-color: #57779a;
+  background-color: #393441;
 }
 
 .btn.btn-danger {
@@ -1058,7 +1121,7 @@ a:hover {
 
 .btn.btn-dark {
   background-color: #1a1a1a;
-  color: #d9e9e8;
+  color: #F9B6C8;
 }
 
 .btn.btn-dark:hover {
@@ -1099,8 +1162,8 @@ a:hover {
 
 .card .card-header {
   padding: 0.375rem;
-  background-color: #2d3e50;
-  color: #d9e9e8;
+  background-color: #26232B;
+  color: #F9B6C8;
 }
 
 .card .card-body {
@@ -1340,6 +1403,70 @@ label form [type='radio'] {
   max-width: 100%;
 }
 
+/* CUSTOM COLORS */
+.bg-custom-red {
+  background-color: #ff0114; 
+}
+
+.text-custom-black {
+  color: #010400;
+}
+
+.text-custom-red {
+  color:#ff0114;
+}
+
+.text-custom-gold1 {
+  color: #f3c43e;
+}
+
+.text-custom-gold2 {
+  color: #d7aa2e
+}
+
+.bg-custom-gold1 {
+  background-color: #f3c43e;
+}
+
+.bg-custom-gold2 {
+  background-color: #d7aa2e
+}
+
+.bg-custom-black {
+  background-color: #010400;
+}
+
+.bg-custom-blue {
+  background-color: #62BBC1;
+}
+
+.bg-custom-olive {
+  background-color: #30332E;
+}
+
+.bg-custom-silver {
+  background-color: #BFBFB7;
+}
+
+.bg-custom-pink {
+  background-color: #F9B6C8;
+}
+
+.btn-custom-taupe {
+  background-color: #818087;
+}
+
+.bg-custom-lion {
+  background-color: #C8A16A;
+}
+
+.bg-custom-raisin {
+  background-color: #26232B;
+}
+
+.text-custom-pink {
+  color: #F9B6C8;
+}
 
 
 /* col-sm */

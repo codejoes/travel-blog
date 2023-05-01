@@ -37,12 +37,12 @@ const DeletePost = ({ postId }) => {
     <div className="flex-row">
       {Auth.loggedIn() ? (
         <>
-          <button onClick={handleDelete} className="btn btn-sm btn-danger">
+          <button onClick={handleDelete} className="btn btn-lg btn-danger">
             🗑️
           </button>
         </>
       ) : (
-        <button className="btn btn-sm btn-info">
+        <button className="btn btn-lg btn-info">
           <Link to="/login">Login</Link>
         </button>
       )}
